@@ -1,0 +1,86 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+  /* background-color: #ecf0f5; */
+}
+
+.app-container-row {
+  padding-top: 5em;
+}
+
+.app-container {
+  display: block;
+  margin: auto;
+}
+
+/* Toggle bar CSS */
+.app-container > .toggler-row {
+  display: none;
+}
+
+/* Navigation CSS */
+.navigation-row {
+  background: aliceblue;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  padding: 0.6rem;
+}
+
+.button > button {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: black;
+}
+
+.button > button:hover {
+  background: none;
+  border: 1px solid;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .app-container > .toggler-row {
+    display: block;
+  }
+
+  .toggler {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navigation {
+    display: contents;
+  }
+
+  .display {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .navigation {
+    display: block;
+  }
+
+  .display {
+    display: none;
+  }
+}
